@@ -2,6 +2,9 @@ import logoSvg from './assets/logo.svg';
 import menu from './assets/menu.svg';
 import close from './assets/close.svg';
 import bonkers from './assets/bonkers.svg';
+import cat from './assets/cat.svg';
+import innerCircle from './assets/innerCircle.svg';
+import outerCircle from './assets/outerCircle.svg';
 
 export default function Bonkers() {
   return (
@@ -43,7 +46,9 @@ export default function Bonkers() {
 </main>
 
 <div className="cat-container">
-    
+    <img src={cat} alt="Cat" />
+    <div className="innerCircle"><img src={innerCircle} alt="Inner Circle" /></div>
+    <div className="outerCircle"><img src={outerCircle} alt="Outer Circle" /></div>
 </div>
 
 
