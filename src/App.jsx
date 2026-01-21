@@ -1,17 +1,30 @@
 
 import './App.css'
 import Chai from './chai'
+import { useState } from 'react'
 
 function App() {
-  const count = 0
+
+  const [count, setCount] = useState(0)
+
+  const add = () => {
+    setCount(count + 1)
+  }
+
+  const remove = () => {
+    if (count > 0) {
+      setCount(count - 1)
+    }
+  }
+
   return (
     <>
       <Chai/>
 
       <h2>Current count = {count}</h2>
-      <button>Add</button>
-      <div> </div>
-      <button>Remove</button>
+      <button onClick={add}>Add</button>
+
+      <button onClick={remove}>Remove</button>
     </>
   )
 }

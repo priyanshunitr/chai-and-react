@@ -10,3 +10,44 @@ body {
   display: none;
 }
 
+.wrap{
+  margin: 2 em;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links{
+  background: white;
+  position: fixed;
+  z-index: 999;
+  top:0;
+  right:0;
+  height : 100vh;
+  margin :0;
+  list-style: none;
+  width : 40%;
+  text-align: right;
+  padding: 2em;
+  transform: translateX(100%);
+}
+
+li{
+    margin: 1.5em 0;
+    &:nth-of-type(1){
+    margin-top: 3em;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 1.3em;
+
+    &:hover{
+      color: #ca6f19;
+      text-decoration: underline;
+    }
+  }
+}

@@ -9,6 +9,7 @@ import outerCircle from './assets/outerCircle.svg';
 export default function Bonkers() {
   return (
 <>
+<div class="wrap">
 
 
 <header>
@@ -23,7 +24,7 @@ export default function Bonkers() {
         <img src={menu} class="menu hide-desktop" alt="Menu icon" />
         </a>
 
-        <ul>
+        <ul class="nav-links">
             <li>
                 <a href="#">
                     <img src={close} alt="Close button" />
@@ -53,6 +54,6 @@ export default function Bonkers() {
 
 
 
-
+</div>
 </>
 )}
