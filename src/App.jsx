@@ -20,7 +20,10 @@ function App() {
 
   return (
     <>
+      
       <Chai/>
+
+
 
       <h2>Current count = {count}</h2>
       <button className="bg-blue-500 p-4 rounded" onClick={add}>Add</button>
